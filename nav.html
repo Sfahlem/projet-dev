@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #0078D7;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header a:hover {
+            background-color: #0056a3;
+            color: #f4f4f9;
+        }
+
+        header .home-icon {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-right: 1rem;
+        }
+
+        header .home-icon img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        header .home-icon img:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="page.html" target="iframe2" class="home-icon">
+            <img src="image/25694.png" alt="Home Icon">
+        </a>
+        
+        <a href="pages/Acceuil.html" target="iframe2">Acceuil</a>
+        <a href="pages/ParcoursAcadémique.html" target="iframe2">Parcours Académique</a>
+        <a href="pages/Competences.html" target="iframe2">Compétences</a>
+        <a href="pages/contact.html" target="iframe2">Contact</a>
+        <a href="pages/IIT.html" target="iframe2">IIT</a>
+        <a href="pages/Manifestations_Sc.html" target="iframe2">Manifestations Scientifiques</a>
+        <a href="pages/Matieres.html" target="iframe2">Matières</a>
+        <a href="pages/quizz.html" target="iframe2">Quiz</a>
+        <a href="pages/sport.html" target="iframe2">Sport</a>
+        <a href="pages/Stage.html" target="iframe2">Stage</a>
+    </header>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages - Institut International de Technologie (IIT)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            color: #0078D7;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .img-container img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../image/logo-iit.png" alt="Logo IIT">
+        <h1>Institut International de Technologie (IIT)</h1>
+    </header>
+    <p>
+        L’Institut International de Technologie (IIT) est une institution d’excellence dédiée à la formation des ingénieurs et des futurs leaders dans le domaine des technologies innovantes. 
+        Avec une infrastructure moderne, un corps enseignant hautement qualifié et un environnement académique dynamique, l’IIT offre une expérience unique, alliant savoir, pratique et innovation. 
+        Ce cadre inspire ses étudiants à devenir des acteurs de changement, capables de relever les défis du futur.
+    </p>
+    <div class="img-container">
+        <img src="../image/iit4.webp" alt="Vue du campus de l'IIT">
+        <img src="../image/iit3.jpg" alt="Bâtiment principal de l'IIT">
+        <img src="../image/iit2.png" alt="Étudiants devant l'IIT">
+    </div>
+    <footer>
+        &copy; 2024 - Témoignages sur l'Institut International de Technologie (IIT)
+    </footer>
+</body>
+</html>

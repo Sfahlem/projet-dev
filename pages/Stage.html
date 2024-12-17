@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de Photos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+      }
+
+      header {
+        width: 100%;
+        background-color: #0078d7;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        color: #fff;
+        font-size: 1.5em;
+      }
+
+      main {
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+      }
+
+      p {
+        max-width: 800px;
+        margin: 20px auto;
+        line-height: 1.8;
+        text-align: justify;
+        font-size: 1.1em;
+        color: #333;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      .img-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .img-container img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .img-container img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MON STAGE</h1>
+    </header>
+    <main>
+      <p>
+        Pour mon stage de projet de fin d’études, j’ai eu l’opportunité de
+        travailler au sein de la société Ben Younes Web, une entreprise reconnue
+        pour sa créativité et sa discipline exemplaire. Ce stage m’a permis de
+        plonger dans un environnement professionnel dynamique, où l’innovation
+        est au cœur de chaque projet. Grâce à l’organisation rigoureuse de
+        l’équipe et à leur capacité à proposer des solutions créatives, j’ai pu
+        développer mes compétences techniques et personnelles tout en
+        participant activement à des projets enrichissants. Cette expérience a
+        été une étape marquante dans mon parcours, renforçant ma passion pour le
+        domaine et mon envie de contribuer à des projets ambitieux.
+      </p>
+
+      <div class="img-container">
+        <img src="../image/Cybeer.jpg" alt="Photo de stage 1" />
+        <img src="../image/benyouneslogo.jpeg" alt="Photo de stage 2" />
+        <img src="../image/elif1.jpeg" alt="Photo de stage 3" />
+        <img src="../image/elif2.jpeg" alt="Photo de stage 4" />
+        <img src="../image/elif3.jpeg" alt="Photo de stage 5" />
+        <img src="../image/benyounesweb.jpeg" alt="Photo de stage 6" />
+      </div>
+    </main>
+  </body>
+</html>

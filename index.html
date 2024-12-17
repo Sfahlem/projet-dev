@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        
+        header {
+            width: 100%;
+            background-color: #0078D7;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header iframe {
+            width: 90%;
+            height: 60px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        main {
+            flex-grow: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px 0;
+        }
+
+        main iframe {
+            width: 90%;
+            height: 80vh;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        #iframe1{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <iframe src="nav.html" frameborder="0"id="iframe1"></iframe>
+    </header>
+    <main>
+        <iframe src="page.html" frameborder="0" name="iframe2"></iframe>
+    </main>
+</body>
+</html>

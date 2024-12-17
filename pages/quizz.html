@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Mixte</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0078d7;
+    }
+
+    form {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question h3 {
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #0078d7;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+    }
+
+    .result {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e3f7d3;
+      border: 1px solid #c8e6c9;
+      border-radius: 5px;
+    }
+
+    .correct-answers {
+      margin-top: 20px;
+      background-color: #f4f4f9;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz Mixte</h1>
+  <form id="quizForm">
+    <div class="question">
+      <h3>1. Quelle ville est connue pour avoir abrité Carthage, une ancienne civilisation importante ?</h3>
+      <input type="radio" name="q1" value="1"> Tunis<br>
+      <input type="radio" name="q1" value="0"> Sfax<br>
+      <input type="radio" name="q1" value="0"> Hammamet<br>
+    </div>
+    <div class="question">
+      <h3>2. Quel est le héros national tunisien qui a combattu contre les Français ?</h3>
+      <input type="radio" name="q2" value="1"> Habib Bourguiba<br>
+      <input type="radio" name="q2" value="0"> Hannibal<br>
+      <input type="radio" name="q2" value="0"> Salah Ben Youssef<br>
+    </div>
+    <div class="question">
+      <h3>3. En quelle année la Tunisie a-t-elle obtenu son indépendance ?</h3>
+      <input type="radio" name="q3" value="1"> 1956<br>
+      <input type="radio" name="q3" value="0"> 1945<br>
+      <input type="radio" name="q3" value="0"> 1962<br>
+    </div>
+    <div class="question">
+      <h3>4. Quelle est la plus grande chaîne de montagnes en Tunisie ?</h3>
+      <input type="radio" name="q4" value="1"> La chaîne de l'Atlas<br>
+      <input type="radio" name="q4" value="0"> Les Alpes<br>
+      <input type="radio" name="q4" value="0"> Les Andes<br>
+    </div>
+    <div class="question">
+      <h3>5. Quelle mer borde la Tunisie au nord ?</h3>
+      <input type="radio" name="q5" value="1"> La mer Méditerranée<br>
+      <input type="radio" name="q5" value="0"> L'océan Atlantique<br>
+      <input type="radio" name="q5" value="0"> La mer Rouge<br>
+    </div>
+    <div class="question">
+      <h3>6. Quel désert couvre une grande partie du sud de la Tunisie ?</h3>
+      <input type="radio" name="q6" value="1"> Le Sahara<br>
+      <input type="radio" name="q6" value="0"> Le Gobi<br>
+      <input type="radio" name="q6" value="0"> Le Kalahari<br>
+    </div>
+    <div class="question">
+      <h3>7. Quel est l’animal domestique le plus courant dans les foyers tunisiens ?</h3>
+      <input type="radio" name="q7" value="1"> Chat<br>
+      <input type="radio" name="q7" value="0"> Chèvre<br>
+      <input type="radio" name="q7" value="0"> Cheval<br>
+    </div>
+    <div class="question">
+      <h3>8. Quel animal est souvent utilisé dans les zones rurales pour le travail agricole ?</h3>
+      <input type="radio" name="q8" value="1"> Âne<br>
+      <input type="radio" name="q8" value="0"> Chien<br>
+      <input type="radio" name="q8" value="0"> Vache<br>
+    </div>
+    <div class="question">
+      <h3>9. Quel oiseau est souvent élevé pour ses œufs ?</h3>
+      <input type="radio" name="q9" value="1"> Poule<br>
+      <input type="radio" name="q9" value="0"> Canard<br>
+      <input type="radio" name="q9" value="0"> Pigeon<br>
+    </div>
+    <div class="question">
+      <h3>10. Quel animal sauvage est souvent observé dans le désert tunisien ?</h3>
+      <input type="radio" name="q10" value="1"> Fennec<br>
+      <input type="radio" name="q10" value="0"> Lion<br>
+      <input type="radio" name="q10" value="0"> Éléphant<br>
+    </div>
+    <div class="question">
+      <h3>11. Quel reptile est connu pour vivre dans les régions arides tunisiennes ?</h3>
+      <input type="radio" name="q11" value="1"> Cobra<br>
+      <input type="radio" name="q11" value="0"> Crocodile<br>
+      <input type="radio" name="q11" value="0"> Tortue de mer<br>
+    </div>
+    <div class="question">
+      <h3>12. Quel oiseau migrateur peut être vu dans les zones humides tunisiennes ?</h3>
+      <input type="radio" name="q12" value="1"> Flamant rose<br>
+      <input type="radio" name="q12" value="0"> Aigle<br>
+      <input type="radio" name="q12" value="0"> Moineau<br>
+    </div>
+    <button type="button" onclick="calculateScore()">Valider</button>
+  </form>
+  <div id="result" class="result" style="display: none;"></div>
+  <div id="correctAnswers" class="correct-answers" style="display: none;"></div>
+  <script>
+    const correctAnswers = [
+      "1. Tunis",
+      "2. Habib Bourguiba",
+      "3. 1956",
+      "4. La chaîne de l'Atlas",
+      "5. La mer Méditerranée",
+      "6. Le Sahara",
+      "7. Chat",
+      "8. Âne",
+      "9. Poule",
+      "10. Fennec",
+      "11. Cobra",
+      "12. Flamant rose"
+    ];
+    function calculateScore() {
+      const form = document.getElementById("quizForm");
+      const resultDiv = document.getElementById("result");
+      const answersDiv = document.getElementById("correctAnswers");
+      let score = 0;
+      for (let i = 1; i <= 12; i++) {
+        const answer = form["q" + i];
+        if (answer) {
+          for (let option of answer) {
+            if (option.checked && option.value === "1") {
+              score++;
+            }
+          }
+        }
+      }
+      resultDiv.style.display = "block";
+      answersDiv.style.display = "block";
+      resultDiv.textContent = "Votre score est : " + score + "/12";
+      let answersHTML = "<h3>Réponses correctes :</h3><ul>";
+      for (let i = 0; i < correctAnswers.length; i++) {
+        answersHTML += "<li>" + correctAnswers[i] + "</li>";
+      }
+      answersHTML += "</ul>";
+      answersDiv.innerHTML = answersHTML;
+    }
+  </script>
+</body>
+</html>
